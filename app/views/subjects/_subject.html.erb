@@ -29,4 +29,15 @@
     <%= subject.teacher_id %>
   </p>
 
+  <p>
+    <strong>Avatar:</strong>
+    <p><%= image_tag user.avatar %></p>
+  </p>
+
+  <p>
+    <%user&.id_cards&.map do |id|%>
+      <p><%=id.filename%></p>
+    <%end%>
+  </p>
+
 </div>
