@@ -23,7 +23,12 @@
     <strong>Number of students:</strong>
     <%= subject.number_of_students %>
   </p>
-
+<p>
+  <strong>Attendance:</strong>
+  <%=subject.each do |student|%>
+  <%subject.student.name%>
+  <%end%>
+  </p>
   <p>
     <strong>Teacher:</strong>
     <%= subject.teacher_id %>
